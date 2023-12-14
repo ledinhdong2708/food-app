@@ -25,7 +25,7 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
+const navItems = ["Home", "Menu", "About US", "Contact"];
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -104,7 +104,11 @@ export default function Header(props: Props) {
       <AppBar component="nav">
         <Toolbar
           component="div"
-          sx={{ display: "flex", justifyContent: "space-between" }}
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            backgroundColor: "#2196f3",
+          }}
         >
           <IconButton
             color="inherit"
